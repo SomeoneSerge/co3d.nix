@@ -14,7 +14,7 @@ DEFAULT_LINK_LIST_FILE = os.path.join(os.path.dirname(__file__), "links.json")
 DEFAULT_SHA256S_FILE = os.path.join(os.path.dirname(__file__), "co3d_sha256.json")
 
 
-if __name__ == "__main__":
+def main():
     parser = build_arg_parser("CO3D", DEFAULT_LINK_LIST_FILE, DEFAULT_SHA256S_FILE)
     parser.add_argument(
         "--single_sequence_subset",
@@ -35,3 +35,7 @@ if __name__ == "__main__":
         sha256s_file=str(args.sha256_file),
         skip_downloaded_archives=not bool(args.redownload_existing_archives),
     )
+
+
+if __name__ == "__main__":
+    main()

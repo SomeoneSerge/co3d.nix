@@ -23,4 +23,5 @@ setuptools.setup(
         "tqdm",
         "plyfile",
     ],
+    entry_points={"console_scripts": ["co3d-download = co3d.download_dataset:main"]},
 )
