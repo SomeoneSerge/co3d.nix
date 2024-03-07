@@ -7,7 +7,7 @@
 
 import os
 
-from dataset.download_dataset_impl import build_arg_parser, download_dataset
+from co3d.dataset.download_dataset_impl import build_arg_parser, download_dataset
 
 
 DEFAULT_LINK_LIST_FILE = os.path.join(os.path.dirname(__file__), "links.json")
